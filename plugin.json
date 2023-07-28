@@ -1,0 +1,21 @@
+{
+  "name": "Redirect",
+  "id": "redirect",
+  "script": "script.js",
+  "options": [
+    {
+      "id": "origin",
+      "name": "Destination URL origin",
+      "description": "The destination URL not including the path. For example: <code>https://www.example.com</code>",
+      "type": "string",
+      "default": "https://www.example.com"
+    },
+    {
+      "id": "path",
+      "name": "Include path",
+      "description": "If enabled, the path of the original URL will be appended to the destination URL. For example: <code>http://127.0.0.1:80/path/to/page</code> will redirect to <code>https://www.example.com/path/to/page</code>. If disabled, the destination URL will not include the path, such as <code>https://www.example.com</code>.",
+      "type": "bool",
+      "default": true
+    }
+  ]
+}
